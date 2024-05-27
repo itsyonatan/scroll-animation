@@ -1,0 +1,44 @@
+body{
+    background-color: #131316;
+    color: #ffffff;
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.logos{
+    display: flex;
+}
+.logos img{
+    display: block;
+    width: 12em;
+    height: 12em;
+    object-fit: cover;
+    margin-right: 0.8em;
+}
+.logo:nth-child(2){
+    transition-delay: 600ms;
+}
+.logo:nth-child(3){
+    transition-delay: 1000ms;
+}
+.logo:nth-child(4){
+    transition-delay: 1300ms;
+}
